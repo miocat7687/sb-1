@@ -111,12 +111,6 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .wrapper .header-wrap {
-    font-size: 0.875em;
-  }
-}
-
 .wrapper .header-wrap .title {
   padding: 1em;
   font-weight: bold;

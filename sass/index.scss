@@ -37,10 +37,6 @@ $popFontColor : #D83A56;
         @include MD{
             height: 54px;
         }
-        @include XS{
-            font-size: 0.875em;
-            
-        }
         .title{
             padding: 1em;
             font-weight: bold;
