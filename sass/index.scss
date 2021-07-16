@@ -73,6 +73,7 @@ $popFontColor : #D83A56;
     }   
     
     .side-wrap{
+        
         position: fixed;
         left: 0;
         bottom:0;
@@ -85,7 +86,7 @@ $popFontColor : #D83A56;
         animation-timing-function: linear;
         .side-header{
             position: relative;
-
+            color: $headerFontColor;
             height: 100px;
             @include MD{
                 height: 54px;

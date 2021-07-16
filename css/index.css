@@ -209,6 +209,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .side-wrap .side-header {
   position: relative;
+  color: #FFEACA;
   height: 100px;
   margin-bottom: 2em;
   background-color: #1B2021;
