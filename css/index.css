@@ -90,7 +90,7 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .header-wrap {
   width: 100vw;
   height: 100px;
-  color: white;
+  color: #fffbfb;
   position: relative;
   background-color: #1B2021;
   display: -webkit-box;
@@ -211,7 +211,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .side-wrap .side-header {
   position: relative;
-  color: white;
+  color: #fffbfb;
   height: 100px;
   margin-bottom: 2em;
   background-color: #1B2021;
