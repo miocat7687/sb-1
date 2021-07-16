@@ -316,7 +316,7 @@ a:link, a:visited, a:hover, a:active {
 
 @media screen and (max-width: 576px) {
   .wrapper .main-wrapper .main-wrap .input-gp .text {
-    width: 350px;
+    width: 250px;
   }
 }
 
@@ -336,7 +336,7 @@ a:link, a:visited, a:hover, a:active {
 
 @media screen and (max-width: 576px) {
   .wrapper .main-wrapper .main-wrap .input-gp .text input {
-    width: 350px;
+    width: 250px;
   }
 }
 

@@ -120,7 +120,7 @@ $popFontColor : #D83A56;
                     margin-bottom: 0.5em;
                     width: 500px;
                     @include XS{
-                        width: 350px;
+                        width: 250px;
                     }
                     input{
                         width: 500px;
@@ -134,7 +134,7 @@ $popFontColor : #D83A56;
                             border: $postColor 1px solid;
                         }
                         @include XS{
-                            width: 350px;
+                            width: 250px;
                         }
                     }
                     .i-left{
