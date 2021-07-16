@@ -37,7 +37,6 @@ $popFontColor : #D83A56;
     .header-wrap{
         width: 100vw;
         height: 100px;
-        
         color: $headerFontColor;
         position: relative;
         background-color: $headerColor;
@@ -49,7 +48,6 @@ $popFontColor : #D83A56;
             color: $maniTitle;
             font-family: $Shrikhand;
             padding: 1em;
-            font-weight: bold;
             font-size: 1.5em;
         }
         .menu-wrap{
@@ -123,6 +121,7 @@ $popFontColor : #D83A56;
     }
 
     .main-wrapper{
+        
         background-color: $bgColor;
         margin-top: 1em;
         width: 960px;
