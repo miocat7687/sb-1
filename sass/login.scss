@@ -159,6 +159,9 @@ $popFontColor : #D83A56;
         }
         .btn{
             margin-bottom: 0.5em;
+            @include XS{
+                font-size: 0.75em;
+            }
             .btn-blue{
                 line-height: 1em;
                 text-align: center;

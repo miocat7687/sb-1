@@ -361,6 +361,12 @@ a:link, a:visited, a:hover, a:active {
   margin-bottom: 0.5em;
 }
 
+@media screen and (max-width: 576px) {
+  .wrapper .main-wrapper .btn {
+    font-size: 0.75em;
+  }
+}
+
 .wrapper .main-wrapper .btn .btn-blue {
   line-height: 1em;
   text-align: center;
