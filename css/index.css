@@ -66,7 +66,7 @@ a:link, a:visited, a:hover, a:active {
   padding-bottom: 100px;
   min-height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
-  color: #4C4C6D;
+  color: #FFEACA;
   font-size: 0.75em;
 }
 
@@ -89,7 +89,7 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .header-wrap {
   width: 100vw;
   height: 100px;
-  color: white;
+  color: #EEEEEE;
   position: relative;
   background-color: #1B2021;
   display: -webkit-box;
@@ -250,7 +250,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .side-wrap .side .menu-list li:hover {
   background-color: #1B2021;
-  color: #1B2021;
+  color: white;
 }
 
 .wrapper .side-wrap .side .icon-list {
@@ -411,7 +411,7 @@ a:link, a:visited, a:hover, a:active {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  color: white;
+  color: #EEEEEE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

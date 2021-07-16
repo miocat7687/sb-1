@@ -1,12 +1,14 @@
 @import 'base';
-$bgColor:#1B2021;//00BCD4
-$postColor:#1B2021; //?DD2C00
+$bgColor:white;//00BCD4
 $boardHeader:#1B2021;
 $headerColor:#1B2021;
-$footerColor:white;
-$headerFontColor:white;
+$footerColor:#EEEEEE;
+$fontColor:#FFEACA;
+
+$postColor:#1B2021; //?DD2C00
+$headerFontColor:#EEEEEE;
 $sideColor:#00BCD4;
-$fontColor:#4C4C6D;
+
 $popBgColor : white;
 $popFontColor : #D83A56;
 
@@ -46,6 +48,7 @@ $popFontColor : #D83A56;
             font-size: 1.5em;
         }
         .menu-wrap{
+            
             font-size: 1.25em;
             @include fx();
             @include MD{
@@ -99,7 +102,7 @@ $popFontColor : #D83A56;
                     padding: 1em;
                     &:hover{
                         background-color: $headerColor;
-                        color: $bgColor
+                        color: $bgColor;
                     }
                 }
             }
@@ -115,7 +118,7 @@ $popFontColor : #D83A56;
     }
 
     .main-wrapper{
-        background-color: white;
+        background-color: $bgColor;
         margin-top: 1em;
         width: 960px;
         margin: 1em auto;
