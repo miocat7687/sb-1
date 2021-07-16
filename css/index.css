@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 /**************** 반응형 ****************/
 html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt, fieldset {
   margin: 0;
@@ -118,7 +119,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .header-wrap .title {
   color: #F7DBF0;
-  font-family: "Shrikhand", cursive;
+  font-family: "Yomogi", cursive;
   padding: 1em;
   font-size: 1.5em;
 }
