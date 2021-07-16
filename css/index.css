@@ -443,10 +443,6 @@ a:link, a:visited, a:hover, a:active {
   padding: 0 0.125em;
 }
 
-.wrapper .footer-wrap .open-date {
-  font-weight: bold;
-}
-
 .wrapper li.menu {
   font-weight: 500;
 }
