@@ -110,80 +110,14 @@ $popFontColor : #D83A56;
             padding: 0 1em;
         }
         .main-wrap{
+            
+            
 
             position: relative;
             section{
                 margin-bottom: 1em;
             }
-            .slider{
-                img{
-                    height: 50vh;
-                }
-            }
-
-            .borad-wrap{
-                @include fx($h:$SB);
-                .board-header{
-                    border-bottom: 2px solid $postColor;
-                    p{
-                        padding-bottom: 0.25em;
-                    }
-                }
-                .board{
-                    width: 45%;
-                    padding: 0.5em 0;
-                    @include MD{
-                        width: 100%;
-                    }
-                    table{
-                        border-collapse: collapse;
-                        width: 100%;
-                        tr{
-                            td{
-                                padding: 0.5em 0.25em;
-                                &:nth-child(2){
-                                    text-align: right;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .instagram-wrap{
-                .instagram-list{
-                    width: 102%;
-                    overflow-x: hidden;
-                    @include fx();
-                    .instagram{
-                        margin-right: 2%;
-                        width: 23%;
-                        @include MD{
-                            &:nth-child(n+1):nth-child(-n+2){
-                                margin-bottom: 2%;
-                            }
-                        }
-                        .instagram-header{
-                            border-bottom: 2px solid $postColor;
-                            margin-bottom: 0.25em;
-                            p{
-                                padding-bottom: 0.25em;
-                            }
-                        }
-                        img{
-                            height: 200px;
-                        }
-                        @include MD{
-                            width: 48%;
-                        }
-                    }
-                }
-            }
-        }
-        .header{
-            p{
-                font-weight: 700;
-            }
+            
         }
 
     }
@@ -191,6 +125,7 @@ $popFontColor : #D83A56;
     .footer-wrap{
         position: absolute;
         bottom: 0;
+        left: 0;
         width: 100vw;
         @include fx($h:$CT,$v:$CT,$direction:column);
         height: 100px;
@@ -217,6 +152,11 @@ $popFontColor : #D83A56;
         font-weight: 500;
     }
 
+    .header{
+        p{
+            font-weight: 700;
+        }
+    }
 
 
 

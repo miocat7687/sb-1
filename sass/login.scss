@@ -1,5 +1,4 @@
 @import 'base';
-
 $bgColor:#00BCD4;
 $postColor:#DD2C00; //?DD2C00
 $headerColor:#B2EBF2;
@@ -10,123 +9,252 @@ $fontColor:#4C4C6D;
 $popBgColor : white;
 $popFontColor : #D83A56;
 
-
-//http://rwdb.kr/bttncss/ 버튼디자인
-//https://github.com/ganapativs/bttn.css
-
-.input-gp{
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    .text{
+//http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
+.wrapper{
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    font-family: $noto-kr;
+    color: $fontColor;
+    .side-bt{
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        transform: translate(50%,50%);
+        display: none;
+        @include MD{
+            display: block;
+        }
+    }
+    .header-wrap{
+        width: 100vw;
         position: relative;
-        @include fx($v:$CT);
-        @include shadow($o:0.1,$x:0px,$b:8px);
-        margin-bottom: 0.5em;
-        width: 300px;
-        input{
-            width: 300px;
-            height: 45px;
-            border: 0;
-            font-size: 1em;
-            padding: 0 2.5em;
-            border: 1px solid $sideColor;
-            border-radius: 4px;
-            &:focus{
-                border: $postColor 1px solid;
+        background-color: $headerColor;
+        @include fx($v:$CT,$direction:column);
+        padding-top: 1em;
+        .title{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .menu-wrap{
+            font-size: 1.25em;
+            @include fx();
+            .menu-list{
+                @include fx();
+                li{
+                    padding: 1em;
+                }
+            }
+            .icon-list{
+                @include MD{
+                    display: none;
+                }
+                @include fx($v:$FE);
+                li{
+                    padding: 0.5em;
+                    padding-bottom: 1em;
+                }
             }
         }
-        .i-left{
-            position: absolute;
-            padding-left: 1em;
+    }   
+    
+    .side-wrap{
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 200px;
+        height: 100vh;
+        background: white;
+        z-index: 150;
+        left: -9999px;
+        transition: all 0.3s;
+        animation-timing-function: linear;
+        .side-header{
+            position: relative;
+            height: 100px;
+            margin-bottom: 2em;
+            background-color: $headerColor;
         }
-        .i-right{
-            position: absolute;
-            right: 0;
-            padding-right: 1em;
-
+        .side{
+            @include fx($h:$CT);
+            .menu-list{
+                text-align: center;
+                width: 200px;
+                li{
+                    width: 100%;
+                    padding: 1em;
+                    &:hover{
+                        background-color: $headerColor;
+                        color: $bgColor
+                    }
+                }
+            }
+            .icon-list{
+                @include fx();
+                position: absolute;
+                bottom: 5%;
+                li{
+                    padding: 0.5em;
+                }
+            }
         }
     }
 
-    .check{
-        @include fx();
-        height: 40px;
-        margin-bottom: 0.5em;
-        .group{
-            label{
+    .main-wrapper{
+        margin-top: 1em;
+        width: 960px;
+        margin: 1em auto;
+        @include MD{
+            width: calc(100% - 2em);
+            padding: 0 1em;
+        }
+        .main-wrap{
+            margin-top: 10vh;
+            @include fx($v:$CT,$h:$CT,$direction:column);
+            .input-gp{
+                .text{
+                    position: relative;
+                    @include fx($v:$CT);
+                    @include shadow($o:0.1,$x:0px,$b:8px);
+                    margin-bottom: 0.5em;
+                    width: 500px;
+                    @include XS{
+                        width: 350px;
+                    }
+                    input{
+                        width: 500px;
+                        height: 45px;
+                        border: 0;
+                        font-size: 1em;
+                        padding: 0 2.5em;
+                        border: 1px solid $sideColor;
+                        border-radius: 4px;
+                        &:focus{
+                            border: $postColor 1px solid;
+                        }
+                        @include XS{
+                            width: 350px;
+                        }
+                    }
+                    .i-left{
+                        position: absolute;
+                        padding-left: 1em;
+                        z-index: 1;
+                    }
+                    .i-right{
+                        position: absolute;
+                        right: 0;
+                        padding-right: 1em;
+                        z-index: 1;
+                    }
+                }
+            }
+
+            position: relative;
+            section{
+                margin-bottom: 1em;
+            }
+            
+        }
+        .btn{
+            margin-bottom: 0.5em;
+            .btn-blue{
+                line-height: 1em;
+                text-align: center;
                 display: inline-block;
                 background-color: $headerColor;
                 padding: 0.625em;
                 margin-left: 0.25em;
                 border-radius: 0.25em;
                 @include shadow($o:0.2,$x:0px,$b:8px);
-                cursor: pointer;
-                border: 1px solid white;
-            }
-            input[type=checkbox] {
-                display: none;
-                &:checked  + label{
+                &:active{
                     background-color: #94e3ee;
                     @include shadow($o:0,$x:0px,$b:8px);
-                    
                 }
-                
             }
         }
-    }
-    .btn{
-        margin-bottom: 0.5em;
-        .btn-blue{
-            width: 120px;
-            line-height: 1em;
-            text-align: center;
-            display: inline-block;
-            background-color: $headerColor;
-            padding: 0.625em;
-            margin-left: 0.25em;
-            border-radius: 0.25em;
-            @include shadow($o:0.2,$x:0px,$b:8px);
-            &:active{
-                background-color: #94e3ee;
-                @include shadow($o:0,$x:0px,$b:8px);
-            }
-        }
-    }
     
 
-}
+    }
 
-.photo-wrapper{
-    position: absolute;
-    top:50%;
-    left: 0;
-    width: calc(100% + 1em);
-    height: calc(100% + 8px);
-    overflow-x: hidden;
-    .photo-wrap{
-        width: 250px;
-        margin-right: 1em;
-        border: 2px solid $headerColor;
-        border-radius: 8px;
-        @include shadow($o:0.2,$x:0px,$b:8px);
-        &:hover img{
-            transform: scale(1.1);
-            transition: all 0.8s;
-        }
-        .photo{
-            border-radius: 8px;
-            overflow: hidden;
-            border-bottom: 2px solid $headerColor;
-            img{
+    .footer-wrap{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        @include fx($h:$CT,$v:$CT,$direction:column);
+        height: 100px;
+        background-color: $headerColor;
+        font-size: 1.125em;
+        .menu-list{
+            @include fx();
+            margin-bottom: 0.5em;
+            li{
+                &:not(:last-child):after{
+                    content: "|";
+                    padding: 0 0.125em;
+
+                }
             }
         }
-        .desc{
-            .title{
-                font-size: 1.125em;
-                font-weight: 500;
-                padding: 0.5em;
-                @include multiEllipsis();
-            }
+        .open-date{
+            font-weight: bold;
         }
     }
+
+    //공통
+    li.menu{
+        font-weight: 500;
+    }
+
+    .header{
+        p{
+            font-weight: 700;
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
