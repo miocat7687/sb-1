@@ -1,10 +1,9 @@
 @import 'base';
 $bgColor:#1B2021;//00BCD4
-$postColor:#DD2C00; //?DD2C00
+$postColor:#1B2021; //?DD2C00
 $headerColor:#1B2021;
 $fontColor:#777;
 $sideColor:#00BCD4;
-
 $fontColor:#4C4C6D;
 $popBgColor : white;
 $popFontColor : #D83A56;
@@ -113,6 +112,7 @@ $popFontColor : #D83A56;
     }
 
     .main-wrapper{
+        background-color: white;
         margin-top: 1em;
         width: 960px;
         margin: 1em auto;
