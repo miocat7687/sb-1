@@ -3,6 +3,7 @@ $bgColor:#1B2021;//00BCD4
 $postColor:#1B2021; //?DD2C00
 $boardHeader:#1B2021;
 $headerColor:#1B2021;
+$footerColor:white;
 $headerFontColor:white;
 $sideColor:#00BCD4;
 $fontColor:#4C4C6D;
@@ -205,6 +206,7 @@ $popFontColor : #D83A56;
         position: absolute;
         bottom: 0;
         width: 100vw;
+        color: $footerColor;
         @include fx($h:$CT,$v:$CT,$direction:column);
         height: 100px;
         background-color: $headerColor;

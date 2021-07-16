@@ -411,6 +411,7 @@ a:link, a:visited, a:hover, a:active {
   position: absolute;
   bottom: 0;
   width: 100vw;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
