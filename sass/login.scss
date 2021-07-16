@@ -20,7 +20,7 @@ $popFontColor : #D83A56;
         font-size: 2em;
         position: absolute;
         left: 0;
-        bottom: 50%;
+        bottom: 60%;
         transform: translate(50%,50%);
         display: none;
         @include MD{
@@ -28,6 +28,9 @@ $popFontColor : #D83A56;
         }
     }
     .header-wrap{
+        @include XS{
+            font-size: 0.875em;
+        }
         width: 100vw;
         position: relative;
         background-color: $headerColor;

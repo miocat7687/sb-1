@@ -70,7 +70,7 @@ a:link, a:visited, a:hover, a:active {
   font-size: 2em;
   position: absolute;
   left: 0;
-  bottom: 50%;
+  bottom: 60%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
   display: none;
@@ -102,6 +102,12 @@ a:link, a:visited, a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 1em;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .header-wrap {
+    font-size: 0.875em;
+  }
 }
 
 .wrapper .header-wrap .title {
