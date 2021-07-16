@@ -366,6 +366,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrapper .btn {
   margin-bottom: 0.5em;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {

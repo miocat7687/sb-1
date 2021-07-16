@@ -163,6 +163,7 @@ $popFontColor : #D83A56;
         }
         .btn{
             margin-bottom: 0.5em;
+            font-weight: 700;
             @include XS{
                 font-size: 0.75em;
             }
