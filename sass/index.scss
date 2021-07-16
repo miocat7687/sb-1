@@ -34,41 +34,44 @@ $popFontColor : #D83A56;
             display: block;
         }
     }
-    .header-wrap{
+    .header-wrapper{
         width: 100vw;
         height: 100px;
         color: $headerFontColor;
         position: relative;
         background-color: $headerColor;
-        @include fx($v:$CT,$direction:column);
+        @include fx($h:$CT);
         @include MD{
-            height: 54px;
-        }
-        .title{
-            color: $maniTitle;
-            font-family: $Yomogi;
-            padding: 1em;
-            font-size: 1.5em;
-        }
-        .menu-wrap{
             
-            font-size: 1.25em;
-            @include fx();
-            @include MD{
-                display: none;
+        }
+        .header-wrap{
+            width: 960px;
+            @include fx($h:$SB);
+            .title{
+                line-height: 2.5em;
+                color: $maniTitle;
+                font-family: $Yomogi;
+                padding: 1em;
+                padding-left: 2em;
+                font-size: 1.75em;
             }
-            .menu-list{
-                @include fx();
-                li{
-                    padding: 1em;
+            .menu-wrap{
+                @include fx($v:$FS,$h:$CT);
+                font-size: 1.25em;
+                @include MD{
+                    display: none;
                 }
-            }
-            .icon-list{
-
-                @include fx($v:$FE);
-                li{
-                    padding: 0.5em;
-                    padding-bottom: 1em;
+                .menu-list{
+                    @include fx();
+                    li{
+                        padding: 1em;
+                    }
+                }
+                .icon-list{
+                    @include fx();
+                    li{
+                        padding: 1em 0.5em;
+                    }
                 }
             }
         }
@@ -90,7 +93,7 @@ $popFontColor : #D83A56;
             color: $headerFontColor;
             height: 100px;
             @include MD{
-                height: 54px;
+                //height: 54px;
             }
             margin-bottom: 2em;
             background-color: $headerColor;

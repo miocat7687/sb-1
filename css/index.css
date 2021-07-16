@@ -88,7 +88,7 @@ a:link, a:visited, a:hover, a:active {
   }
 }
 
-.wrapper .header-wrap {
+.wrapper .header-wrapper {
   width: 100vw;
   height: 100px;
   color: #fffbfb;
@@ -97,41 +97,9 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (max-width: 992px) {
-  .wrapper .header-wrap {
-    height: 54px;
-  }
-}
-
-.wrapper .header-wrap .title {
-  color: #F7DBF0;
-  font-family: "Yomogi", cursive;
-  padding: 1em;
-  font-size: 1.5em;
-}
-
-.wrapper .header-wrap .menu-wrap {
-  font-size: 1.25em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -143,13 +111,60 @@ a:link, a:visited, a:hover, a:active {
           flex-direction: row;
 }
 
+.wrapper .header-wrapper .header-wrap {
+  width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .header-wrapper .header-wrap .title {
+  line-height: 2.5em;
+  color: #F7DBF0;
+  font-family: "Yomogi", cursive;
+  padding: 1em;
+  padding-left: 2em;
+  font-size: 1.75em;
+}
+
+.wrapper .header-wrapper .header-wrap .menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.25em;
+}
+
 @media screen and (max-width: 992px) {
-  .wrapper .header-wrap .menu-wrap {
+  .wrapper .header-wrapper .header-wrap .menu-wrap {
     display: none;
   }
 }
 
-.wrapper .header-wrap .menu-wrap .menu-list {
+.wrapper .header-wrapper .header-wrap .menu-wrap .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,20 +182,20 @@ a:link, a:visited, a:hover, a:active {
           flex-direction: row;
 }
 
-.wrapper .header-wrap .menu-wrap .menu-list li {
+.wrapper .header-wrapper .header-wrap .menu-wrap .menu-list li {
   padding: 1em;
 }
 
-.wrapper .header-wrap .menu-wrap .icon-list {
+.wrapper .header-wrapper .header-wrap .menu-wrap .icon-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -189,9 +204,8 @@ a:link, a:visited, a:hover, a:active {
           flex-direction: row;
 }
 
-.wrapper .header-wrap .menu-wrap .icon-list li {
-  padding: 0.5em;
-  padding-bottom: 1em;
+.wrapper .header-wrapper .header-wrap .menu-wrap .icon-list li {
+  padding: 1em 0.5em;
 }
 
 .wrapper .side-wrap {
@@ -215,12 +229,6 @@ a:link, a:visited, a:hover, a:active {
   height: 100px;
   margin-bottom: 2em;
   background-color: #1B2021;
-}
-
-@media screen and (max-width: 992px) {
-  .wrapper .side-wrap .side-header {
-    height: 54px;
-  }
 }
 
 .wrapper .side-wrap .side {
