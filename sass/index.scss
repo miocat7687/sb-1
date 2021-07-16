@@ -4,9 +4,8 @@ $postColor:#1B2021; //?DD2C00
 $boardHeader:#1B2021;
 $headerColor:#1B2021;
 $headerFontColor:white;
-$fontColor:white;
 $sideColor:#00BCD4;
-$fontColor:white;
+$fontColor:#4C4C6D;
 $popBgColor : white;
 $popFontColor : #D83A56;
 
@@ -32,6 +31,7 @@ $popFontColor : #D83A56;
     .header-wrap{
         width: 100vw;
         height: 100px;
+        color: $headerFontColor;
         position: relative;
         background-color: $headerColor;
         @include fx($v:$CT,$direction:column);
