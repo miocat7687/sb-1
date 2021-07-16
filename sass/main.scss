@@ -1,0 +1,214 @@
+@import 'base';
+$bgColor:#00BCD4;
+$postColor:#DD2C00; //?DD2C00
+$headerColor:#B2EBF2;
+$fontColor:#777;
+$sideColor:#00BCD4;
+
+$fontColor:#4C4C6D;
+$popBgColor : white;
+$popFontColor : #D83A56;
+
+//http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
+.wrapper{
+    color: $fontColor;
+    position: relative;
+    .side-bt{
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 75%;
+        transform: translate(50%,50%);
+        display: none;
+        @include MD{
+            display: block;
+        }
+    }
+    .header-wrap{
+        position: relative;
+        background-color: $headerColor;
+        @include fx($v:$CT,$direction:column);
+        padding-top: 1em;
+        .title{
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+        .menu-wrap{
+            font-size: 1.25em;
+            @include fx();
+            .menu-list{
+                @include fx();
+                li{
+                    padding: 1em;
+                }
+            }
+            .icon-list{
+                @include MD{
+                    display: none;
+                }
+                @include fx($v:$FE);
+                li{
+                    padding: 0.5em;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }   
+    
+    .side-wrap{
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 200px;
+        height: 100vh;
+        background: white;
+        z-index: 1;
+        left: -9999px;
+        transition: all 0.3s;
+        animation-timing-function: linear;
+        .side-header{
+            position: relative;
+            height: 96px;
+            margin-bottom: 2em;
+            background-color: $headerColor;
+        }
+        .side{
+            @include fx($h:$CT);
+            .menu-list{
+                text-align: center;
+                width: 200px;
+                li{
+                    width: 100%;
+                    padding: 1em;
+                    &:hover{
+                        background-color: $headerColor;
+                        color: $bgColor
+                    }
+                }
+            }
+            .icon-list{
+                @include fx();
+                position: absolute;
+                bottom: 5%;
+                li{
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+
+    .main-wrap{
+        @include MD{
+        padding: 0 2em;
+        }
+        padding: 0 10%;
+        position: relative;
+        section{
+            margin-bottom: 2em;
+        }
+        .slider{
+            img{
+                height: 30vh;
+            }
+        }
+
+        .borad-wrap{
+            @include fx($h:$SB);
+            .board-header{
+                border-bottom: 1px solid $postColor;
+                p{
+                    padding-bottom: 0.25em;
+                }
+            }
+            .board{
+                width: 45%;
+                min-height: 200px;
+                @include MD{
+                    width: 100%;
+                }
+                table{
+                    border-collapse: collapse;
+                    width: 100%;
+                    tr{
+                        td{
+                            padding: 0.5em 0.25em;
+                            &:nth-child(2){
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .instagram-wrap{
+            .instagram-list{
+                width: 102%;
+                overflow-x: hidden;
+                @include fx();
+                .instagram{
+                    margin-right: 2%;
+                    width: 23%;
+                    margin-bottom: 2%;
+                    img{
+                        height: 200px;
+                    }
+                    @include MD{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer-wrap{
+        @include fx($h:$CT,$v:$CT);
+        height: 100px;
+        background-color: $headerColor;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
