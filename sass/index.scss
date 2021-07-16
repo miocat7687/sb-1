@@ -73,7 +73,6 @@ $popFontColor : #D83A56;
     }   
     
     .side-wrap{
-        
         position: fixed;
         left: 0;
         bottom:0;
@@ -149,7 +148,7 @@ $popFontColor : #D83A56;
                     }
                 }
                 .board{
-                    width: 45%;
+                    width: 49%;
                     padding: 0.5em 0;
                     @include MD{
                         width: 100%;
