@@ -1,10 +1,11 @@
 @import 'base';
-$bgColor:white;//00BCD4
+$bgColor:#fffbfb;//00BCD4
 $boardHeader:#1B2021;
 $headerColor:#1B2021;
-$headerFontColor:#F7DBF0 ;
+$headerFontColor:white ;
 $footerColor:#EEEEEE;
 $fontColor:#1B2021;
+$maniTitle:#F7DBF0;
 
 $postColor:#1B2021; //?DD2C00
 
@@ -15,6 +16,7 @@ $popFontColor : #D83A56;
 
 //http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
 .wrapper{
+    background-color: $bgColor;
     position: relative;
     padding-bottom: 100px;
     min-height: 100vh;
@@ -35,6 +37,7 @@ $popFontColor : #D83A56;
     .header-wrap{
         width: 100vw;
         height: 100px;
+        
         color: $headerFontColor;
         position: relative;
         background-color: $headerColor;
@@ -43,6 +46,7 @@ $popFontColor : #D83A56;
             height: 54px;
         }
         .title{
+            color: $maniTitle;
             font-family: $Shrikhand;
             padding: 1em;
             font-weight: bold;
