@@ -90,7 +90,7 @@ a:link, a:visited, a:hover, a:active {
   width: 100vw;
   height: 100px;
   position: relative;
-  background-color: #B2EBF2;
+  background-color: #1B2021;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +210,7 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
   height: 100px;
   margin-bottom: 2em;
-  background-color: #B2EBF2;
+  background-color: #1B2021;
 }
 
 @media screen and (max-width: 992px) {
@@ -248,8 +248,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .side-wrap .side .menu-list li:hover {
-  background-color: #B2EBF2;
-  color: #00BCD4;
+  background-color: #1B2021;
+  color: #1B2021;
 }
 
 .wrapper .side-wrap .side .icon-list {
@@ -425,7 +425,7 @@ a:link, a:visited, a:hover, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100px;
-  background-color: #B2EBF2;
+  background-color: #1B2021;
   font-size: 1.125em;
 }
 
