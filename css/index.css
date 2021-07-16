@@ -85,7 +85,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .header-wrap {
   width: 100vw;
-  height: 54px;
+  height: 100px;
   position: relative;
   background-color: #B2EBF2;
   display: -webkit-box;
@@ -103,6 +103,12 @@ a:link, a:visited, a:hover, a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .header-wrap {
+    height: 54px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -204,9 +210,15 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .side-wrap .side-header {
   position: relative;
-  height: 54px;
+  height: 100px;
   margin-bottom: 2em;
   background-color: #B2EBF2;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .side-wrap .side-header {
+    height: 54px;
+  }
 }
 
 .wrapper .side-wrap .side {

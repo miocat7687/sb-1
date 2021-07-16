@@ -30,12 +30,16 @@ $popFontColor : #D83A56;
     }
     .header-wrap{
         width: 100vw;
-        height: 54px;
+        height: 100px;
         position: relative;
         background-color: $headerColor;
         @include fx($v:$CT,$direction:column);
+        @include MD{
+            height: 54px;
+        }
         @include XS{
             font-size: 0.875em;
+            
         }
         .title{
             padding: 1em;
@@ -78,7 +82,11 @@ $popFontColor : #D83A56;
         animation-timing-function: linear;
         .side-header{
             position: relative;
-            height: 54px;
+
+            height: 100px;
+            @include MD{
+                height: 54px;
+            }
             margin-bottom: 2em;
             background-color: $headerColor;
         }
