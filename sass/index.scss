@@ -48,15 +48,15 @@ $popFontColor : #D83A56;
             width: 960px;
             @include fx($h:$SB);
             .title{
-                line-height: 2.5em;
+                line-height: 1.5em;
                 color: $maniTitle;
                 font-family: $Yomogi;
                 padding: 1em;
                 padding-left: 2em;
-                font-size: 1.75em;
+                font-size: 2.25em;
             }
             .menu-wrap{
-                @include fx($v:$FS,$h:$CT);
+                @include fx($v:$FE,$h:$CT);
                 font-size: 1.25em;
                 @include MD{
                     display: none;

@@ -131,12 +131,12 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .header-wrapper .header-wrap .title {
-  line-height: 2.5em;
+  line-height: 1.5em;
   color: #F7DBF0;
   font-family: "Yomogi", cursive;
   padding: 1em;
   padding-left: 2em;
-  font-size: 1.75em;
+  font-size: 2.25em;
 }
 
 .wrapper .header-wrapper .header-wrap .menu-wrap {
@@ -146,9 +146,9 @@ a:link, a:visited, a:hover, a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
