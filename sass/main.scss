@@ -29,21 +29,23 @@ $popFontColor : #D83A56;
     }
     .header-wrap{
         width: 100vw;
-        height: 100px;
         position: relative;
         background-color: $headerColor;
         @include fx($v:$CT,$direction:column);
-        padding-top: 1em;
         @include XS{
             font-size: 0.875em;
         }
         .title{
+            padding: 1em;
             font-weight: bold;
             font-size: 1.5em;
         }
         .menu-wrap{
             font-size: 1.25em;
             @include fx();
+            @include MD{
+                display: none;
+            }
             .menu-list{
                 @include fx();
                 li{
@@ -51,9 +53,7 @@ $popFontColor : #D83A56;
                 }
             }
             .icon-list{
-                @include MD{
-                    display: none;
-                }
+
                 @include fx($v:$FE);
                 li{
                     padding: 0.5em;
@@ -76,7 +76,7 @@ $popFontColor : #D83A56;
         animation-timing-function: linear;
         .side-header{
             position: relative;
-            height: 100px;
+            height: 72px;
             margin-bottom: 2em;
             background-color: $headerColor;
         }
