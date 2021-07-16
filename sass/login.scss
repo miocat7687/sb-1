@@ -28,14 +28,14 @@ $popFontColor : #D83A56;
         }
     }
     .header-wrap{
-        @include XS{
-            font-size: 0.875em;
-        }
         width: 100vw;
         position: relative;
         background-color: $headerColor;
         @include fx($v:$CT,$direction:column);
         padding-top: 1em;
+        @include XS{
+            font-size: 0.875em;
+        }
         .title{
             font-weight: bold;
             font-size: 1.5em;
