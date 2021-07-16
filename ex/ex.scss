@@ -29,6 +29,7 @@ $popFontColor : #D83A56;
     }
     .header-wrap{
         width: 100vw;
+        height: 100px;
         position: relative;
         background-color: $headerColor;
         @include fx($v:$CT,$direction:column);
