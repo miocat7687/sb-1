@@ -1,6 +1,7 @@
 @import 'base';
 $bgColor:#1B2021;//00BCD4
 $postColor:#1B2021; //?DD2C00
+$boardHeader:#1B2021;
 $headerColor:#1B2021;
 $fontColor:#777;
 $sideColor:#00BCD4;
@@ -135,7 +136,7 @@ $popFontColor : #D83A56;
             .borad-wrap{
                 @include fx($h:$SB);
                 .board-header{
-                    border-bottom: 2px solid $postColor;
+                    border-bottom: 2px solid $boardHeader;
                     p{
                         padding-bottom: 0.25em;
                     }
@@ -175,7 +176,7 @@ $popFontColor : #D83A56;
                             }
                         }
                         .instagram-header{
-                            border-bottom: 2px solid $postColor;
+                            border-bottom: 2px solid $boardHeader;
                             margin-bottom: 0.25em;
                             p{
                                 padding-bottom: 0.25em;
