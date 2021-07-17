@@ -111,7 +111,7 @@
     }
 
     .main-wrapper{
-        
+        @include fx($h:$CT,$v:$CT,$direction:column);
         background-color: white;
         margin-top: 1em;
         width: 960px;
@@ -123,15 +123,16 @@
         }
         .main-wrap{
             position: relative;
-            @include fx($h:$CT,$v:$CT,$direction:column);
             .signUp-wrap{
                 width: 500px;
                 @include XS{
                     width: 250px;
                 }
                 .header{
-                    font-size: 1.375em;
-                    padding-bottom: 0.75em;
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    margin-bottom: 1em;
+                    border-bottom: 2px solid rgb(240, 237, 237);
                 }
 
 

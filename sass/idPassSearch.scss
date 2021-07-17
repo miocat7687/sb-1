@@ -111,89 +111,38 @@
     }
 
     .main-wrapper{
-        background-color: $bgColor;
+        background-color: white;
         margin-top: 1em;
         width: 960px;
         margin: 1em auto;
+        height: calc(100vh - 200px);
+        @include fx($h:$CT,$v:$CT,$direction:column);
         @include MD{
             width: calc(100% - 2em);
             padding: 0 1em;
         }
         .main-wrap{
             position: relative;
-            section{
+            .idPassSearch-wrap{
+                width: 500px;
+                @include XS{
+                    width: 250px;
+                }
+                .header{
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    margin-bottom: 1em;
+                    border-bottom: 2px solid rgb(240, 237, 237);
+                }
+                .sub-header{
+                    font-size: 1.125em;
+                    margin-bottom: 1em;
+                }
                 margin-bottom: 1em;
             }
-            .slider{
-                img{
-                    height: 50vh;
-                }
-            }
 
-            .borad-wrap{
-                @include fx($h:$SB);
-                .board-header{
-                    border-bottom: 2px solid $boardHeader;
-                    p{
-                        padding-bottom: 0.25em;
-                    }
-                }
-                .board{
-                    width: 49%;
-                    padding: 0.5em 0;
-                    @include MD{
-                        width: 100%;
-                    }
-                    table{
-                        border-collapse: collapse;
-                        width: 100%;
-                        tr{
-                            td{
-                                padding: 0.5em 0.25em;
-                                &:nth-child(2){
-                                    text-align: right;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .instagram-wrap{
-                .instagram-list{
-                    width: 102%;
-                    overflow-x: hidden;
-                    @include fx();
-                    .instagram{
-                        margin-right: 2%;
-                        width: 23%;
-                        @include MD{
-                            &:nth-child(n+1):nth-child(-n+2){
-                                margin-bottom: 2%;
-                            }
-                        }
-                        .instagram-header{
-                            border-bottom: 2px solid $boardHeader;
-                            margin-bottom: 0.25em;
-                            p{
-                                padding-bottom: 0.25em;
-                            }
-                        }
-                        img{
-                            height: 200px;
-                        }
-                        @include MD{
-                            width: 48%;
-                        }
-                    }
-                }
-            }
         }
-        .header{
-            p{
-                font-weight: 700;
-            }
-        }
+        
 
     }
 

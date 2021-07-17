@@ -406,6 +406,21 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: white;
   margin-top: 1em;
   width: 960px;
@@ -422,21 +437,6 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrapper .main-wrap {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .wrapper .main-wrapper .main-wrap .login-wrap {
@@ -450,8 +450,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrapper .main-wrap .login-wrap .header {
-  font-size: 1.375em;
-  padding-bottom: 0.75em;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #f0eded;
 }
 
 .wrapper .main-wrapper .main-wrap .login-wrap .menu {
