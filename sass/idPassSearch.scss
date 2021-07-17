@@ -115,7 +115,7 @@
         margin-top: 1em;
         width: 960px;
         margin: 1em auto;
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 200px);
         @include fx($h:$CT,$v:$CT,$direction:column);
         @include MD{
             width: calc(100% - 2em);
