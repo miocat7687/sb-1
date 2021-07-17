@@ -116,18 +116,23 @@ $popFontColor : #D83A56;
         .main-wrap{
             margin-top: 10vh;
             @include fx($v:$CT,$h:$CT,$direction:column);
-            .input-gp{
-                .text{
+            .header{
+                font-size: 1.375em;
+                padding-bottom: 0.75em;
+            }
+            .login-group{
+                width: 500px;
+                @include XS{
+                    width: 250px;
+                }
+                .input-group{
                     position: relative;
                     @include fx($v:$CT);
                     @include shadow($o:0.1,$x:0px,$b:8px);
                     margin-bottom: 0.5em;
-                    width: 500px;
-                    @include XS{
-                        width: 250px;
-                    }
+                    width: inherit;
                     input{
-                        width: 500px;
+                        width: inherit;
                         height: 45px;
                         border: 0;
                         font-size: 1em;
@@ -153,7 +158,70 @@ $popFontColor : #D83A56;
                         z-index: 1;
                     }
                 }
+                .message-wrap{
+                    margin: 0.5em 0;
+                    font-size: 0.875em;
+                    .error{
+                        color: red;
+                    }
+                }
+                .check-wrap{
+                    width: inherit;
+                    margin-bottom: 0.5em;
+                }
+
+
+                .btn-wrap{
+                    width: inherit;
+                    margin-bottom: 0.5em;
+                    font-weight: 700;
+                    @include XS{
+                        font-size: 0.75em;
+                    }
+                    .btn{
+                        line-height: 1em;
+                        text-align: center;
+                        display: inline-block;
+                        padding: 0.625em;
+                        margin-left: 0.25em;
+                        border-radius: 0.25em;
+                        @include shadow($o:0.2,$x:0px,$b:8px);
+                        background-color: black;
+                        color: $headerFontColor;
+                        &:active{
+                            background-color: #333;
+                            @include shadow($o:0,$x:0px,$b:8px);
+                        }
+                    }
+
+                    .btn-blue{
+                        background-color: $headerColor;
+                        &:active{
+                            background-color: #94e3ee;
+                        }
+                    }
+
+                    .btn-100{
+                        width: inherit;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+        
+                .menu{
+                    @include fx($h:$CT);
+                    li{
+                        margin-top: 1em;
+                        cursor: pointer;
+                        &:nth-child(1)::after{
+                            padding: 0 1vw;
+                            content: "|";
+                        }
+                    }
+                }
+
             }
+
 
             position: relative;
             section{
@@ -161,27 +229,7 @@ $popFontColor : #D83A56;
             }
             
         }
-        .btn{
-            margin-bottom: 0.5em;
-            font-weight: 700;
-            @include XS{
-                font-size: 0.75em;
-            }
-            .btn-blue{
-                line-height: 1em;
-                text-align: center;
-                display: inline-block;
-                background-color: $headerColor;
-                padding: 0.625em;
-                margin-left: 0.25em;
-                border-radius: 0.25em;
-                @include shadow($o:0.2,$x:0px,$b:8px);
-                &:active{
-                    background-color: #94e3ee;
-                    @include shadow($o:0,$x:0px,$b:8px);
-                }
-            }
-        }
+        
     
 
     }
@@ -221,9 +269,6 @@ $popFontColor : #D83A56;
             font-weight: 700;
         }
     }
-
-    
-
 
 
 

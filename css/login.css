@@ -302,7 +302,22 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
 }
 
-.wrapper .main-wrapper .main-wrap .input-gp .text {
+.wrapper .main-wrapper .main-wrap .header {
+  font-size: 1.375em;
+  padding-bottom: 0.75em;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group {
+  width: 500px;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .main-wrapper .main-wrap .login-group {
+    width: 250px;
+  }
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .input-group {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,17 +337,11 @@ a:link, a:visited, a:hover, a:active {
   -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.5em;
-  width: 500px;
+  width: inherit;
 }
 
-@media screen and (max-width: 576px) {
-  .wrapper .main-wrapper .main-wrap .input-gp .text {
-    width: 250px;
-  }
-}
-
-.wrapper .main-wrapper .main-wrap .input-gp .text input {
-  width: 500px;
+.wrapper .main-wrapper .main-wrap .login-group .input-group input {
+  width: inherit;
   height: 45px;
   border: 0;
   font-size: 1em;
@@ -341,60 +350,118 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 4px;
 }
 
-.wrapper .main-wrapper .main-wrap .input-gp .text input:focus {
+.wrapper .main-wrapper .main-wrap .login-group .input-group input:focus {
   border: #DD2C00 1px solid;
 }
 
 @media screen and (max-width: 576px) {
-  .wrapper .main-wrapper .main-wrap .input-gp .text input {
+  .wrapper .main-wrapper .main-wrap .login-group .input-group input {
     width: 250px;
   }
 }
 
-.wrapper .main-wrapper .main-wrap .input-gp .text .i-left {
+.wrapper .main-wrapper .main-wrap .login-group .input-group .i-left {
   position: absolute;
   padding-left: 1em;
   z-index: 1;
 }
 
-.wrapper .main-wrapper .main-wrap .input-gp .text .i-right {
+.wrapper .main-wrapper .main-wrap .login-group .input-group .i-right {
   position: absolute;
   right: 0;
   padding-right: 1em;
   z-index: 1;
 }
 
-.wrapper .main-wrapper .main-wrap section {
-  margin-bottom: 1em;
+.wrapper .main-wrapper .main-wrap .login-group .message-wrap {
+  margin: 0.5em 0;
+  font-size: 0.875em;
 }
 
-.wrapper .main-wrapper .btn {
+.wrapper .main-wrapper .main-wrap .login-group .message-wrap .error {
+  color: red;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .check-wrap {
+  width: inherit;
+  margin-bottom: 0.5em;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap {
+  width: inherit;
   margin-bottom: 0.5em;
   font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
-  .wrapper .main-wrapper .btn {
+  .wrapper .main-wrapper .main-wrap .login-group .btn-wrap {
     font-size: 0.75em;
   }
 }
 
-.wrapper .main-wrapper .btn .btn-blue {
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap .btn {
   line-height: 1em;
   text-align: center;
   display: inline-block;
-  background-color: #B2EBF2;
   padding: 0.625em;
   margin-left: 0.25em;
   border-radius: 0.25em;
   -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: #fffbfb;
 }
 
-.wrapper .main-wrapper .btn .btn-blue:active {
-  background-color: #94e3ee;
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap .btn:active {
+  background-color: #333;
   -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0);
           box-shadow: 0px 5px 8px rgba(0, 0, 0, 0);
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap .btn-blue {
+  background-color: #B2EBF2;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap .btn-blue:active {
+  background-color: #94e3ee;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .btn-wrap .btn-100 {
+  width: inherit;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .menu li {
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.wrapper .main-wrapper .main-wrap .login-group .menu li:nth-child(1)::after {
+  padding: 0 1vw;
+  content: "|";
+}
+
+.wrapper .main-wrapper .main-wrap section {
+  margin-bottom: 1em;
 }
 
 .wrapper .footer-wrap {
