@@ -391,12 +391,12 @@ a:link, a:visited, a:hover, a:active {
   border: 0;
   font-size: 1em;
   padding: 0 2.5em;
-  border: 1px solid #00BCD4;
+  border: 1px solid black;
   border-radius: 4px;
 }
 
 .wrapper .main-wrapper .main-wrap .login-group .input-group input:focus {
-  border: #DD2C00 1px solid;
+  border: #999 1px solid;
 }
 
 @media screen and (max-width: 576px) {
