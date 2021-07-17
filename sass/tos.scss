@@ -1,0 +1,234 @@
+@import 'base';
+
+
+//http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
+.wrapper{
+    background-color: $bgColor;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    font-family: $noto-kr;
+    color: $fontColor;
+    font-size: 0.75em; 
+    .side-bt{
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        transform: translate(50%,50%);
+        display: none;
+        @include MD{
+            display: block;
+        }
+    }
+    .header-wrapper{
+        width: 100vw;
+        height: 100px;
+        color: $headerFontColor;
+        position: relative;
+        background-color: $headerColor;
+        @include fx($h:$CT);
+        @include MD{
+            
+        }
+        .header-wrap{
+            width: 960px;
+            @include fx($h:$SB);
+            .title{
+                line-height: 1.5em;
+                color: $maniTitle;
+                font-family: $Yomogi;
+                padding: 1em;
+                padding-left: 2em;
+                font-size: 2.25em;
+            }
+            .menu-wrap{
+                @include fx($v:$FE,$h:$CT);
+                font-size: 1.25em;
+                @include MD{
+                    display: none;
+                }
+                .menu-list{
+                    @include fx();
+                    li{
+                        padding: 1em;
+                    }
+                }
+                .icon-list{
+                    @include fx();
+                    li{
+                        padding: 1em 0.5em;
+                    }
+                }
+            }
+        }
+    }   
+    
+    .side-wrap{
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 200px;
+        height: 100vh;
+        background: white;
+        z-index: 150;
+        left: -9999px;
+        transition: all 0.3s;
+        animation-timing-function: linear;
+        .side-header{
+            position: relative;
+            color: $headerFontColor;
+            height: 100px;
+            @include MD{
+                //height: 54px;
+            }
+            margin-bottom: 2em;
+            background-color: $headerColor;
+        }
+        .side{
+            @include fx($h:$CT);
+            .menu-list{
+                text-align: center;
+                width: 200px;
+                li{
+                    width: 100%;
+                    padding: 1em;
+                    &:hover{
+                        background-color: $headerColor;
+                        color: $bgColor;
+                    }
+                }
+            }
+            .icon-list{
+                @include fx();
+                position: absolute;
+                bottom: 5%;
+                li{
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+
+    .main-wrapper{
+        
+        background-color: white;
+        margin-top: 1em;
+        width: 960px;
+        margin: 1em auto;
+        @include MD{
+            width: calc(100% - 2em);
+            padding: 0 1em;
+        }
+        .main-wrap{
+            position: relative;
+            .tos-wrap{
+                padding: 2em 5em;
+                @include fx($h:$CT,$v:$ST,$direction:column);
+                .header{
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    margin-bottom: 1em;
+                    font-weight: bold;
+                    border-bottom: 2px solid rgb(240, 237, 237);
+                }
+                .sub-header{
+                    font-weight: bold;
+                    font-size: 1.125em;
+                    margin-bottom: 1em;
+                }
+                .tos{
+                    background-color: rgb(247, 247, 247);
+                    padding: 1em;
+                    line-height: 1.375em;
+                    overflow-y: scroll;
+                    margin-bottom: 1em;
+                    @include scrollNone();
+                    @include shadow-light();
+                    height: 200px;
+                }
+
+            }
+
+           
+
+            
+        }
+        
+
+    }
+
+    .footer-wrap{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        color: $footerColor;
+        @include fx($h:$CT,$v:$CT,$direction:column);
+        height: 100px;
+        background-color: $headerColor;
+        font-size: 1.125em;
+        .menu-list{
+            @include fx();
+            margin-bottom: 0.5em;
+            li{
+                &:not(:last-child):after{
+                    content: "|";
+                    padding: 0 0.125em;
+
+                }
+            }
+        }
+        .open-date{
+            // font-weight: bold;
+        }
+    }
+
+    //공통
+    li.menu{
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -27,8 +27,8 @@
 @mixin shadow($x:5px,$y:5px,$b:5px,$o:0.5) {
 	box-shadow: $x $y $b rgba(0,0,0,$o);
 }
-@mixin shadow-light($x:0,$y:0,$b:5px,$o:0.5) {
-	box-shadow: 5px 5px 10px rgba(255,255,255,$o);
+@mixin shadow-light($x:0,$y:0,$b:8px,$o:0.2) {
+	box-shadow: 5px 5px $b rgba(255,255,255,$o);
 }
 @mixin text-shadow($x:0,$y:0,$b:5px,$o:0.5) {
 	text-shadow: 5px 5px 10px rgba(0,0,0,$o);
@@ -172,4 +172,60 @@
 		
 	}
 	
+}
+
+
+//추가
+$bgColor:#fffbfb;//00BCD4
+$boardHeader:#1B2021;
+$headerColor:#1B2021;
+$headerFontColor:#fffbfb;
+$footerColor:#EEEEEE;
+$fontColor:#1B2021;
+$maniTitle:#F7DBF0;
+
+$postColor:#1B2021; //?DD2C00
+
+$sideColor:#00BCD4;
+
+$popBgColor : white;
+$popFontColor : #D83A56;
+
+
+//공용 뺄것
+.btn-wrap{
+    width: inherit;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    @include XS{
+        font-size: 0.75em;
+    }
+    .btn{
+        line-height: 1em;
+        text-align: center;
+        display: inline-block;
+        padding: 0.625em;
+        margin-left: 0.25em;
+        border-radius: 0.25em;
+        @include shadow($o:0.2,$x:0px,$b:8px);
+        background-color: black;
+        color: $headerFontColor;
+        &:active{
+            background-color: #333;
+            @include shadow($o:0,$x:0px,$b:8px);
+        }
+    }
+
+    .btn-blue{
+        background-color: $headerColor;
+        &:active{
+            background-color: #94e3ee;
+        }
+    }
+
+    .btn-100{
+        width: inherit;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

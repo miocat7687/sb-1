@@ -8,6 +8,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 /**************** 반응형 ****************/
+.btn-wrap {
+  width: inherit;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-wrap {
+    font-size: 0.75em;
+  }
+}
+
+.btn-wrap .btn {
+  line-height: 1em;
+  text-align: center;
+  display: inline-block;
+  padding: 0.625em;
+  margin-left: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: #fffbfb;
+}
+
+.btn-wrap .btn:active {
+  background-color: #333;
+  -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0);
+          box-shadow: 0px 5px 8px rgba(0, 0, 0, 0);
+}
+
+.btn-wrap .btn-blue {
+  background-color: #1B2021;
+}
+
+.btn-wrap .btn-blue:active {
+  background-color: #94e3ee;
+}
+
+.btn-wrap .btn-100 {
+  width: inherit;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt, fieldset {
   margin: 0;
   padding: 0;
