@@ -410,6 +410,7 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 1em;
   width: 960px;
   margin: 1em auto;
+  height: calc(100vh - 200px);
 }
 
 @media screen and (max-width: 992px) {
@@ -421,19 +422,15 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrapper .main-wrap {
   position: relative;
-}
-
-.wrapper .main-wrapper .main-wrap .tos-wrap {
-  padding: 2em 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
@@ -442,38 +439,19 @@ a:link, a:visited, a:hover, a:active {
           flex-direction: column;
 }
 
-.wrapper .main-wrapper .main-wrap .tos-wrap .header {
-  font-size: 1.5em;
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
-  font-weight: bold;
-  border-bottom: 2px solid #f0eded;
+.wrapper .main-wrapper .main-wrap .signUp-wrap {
+  width: 500px;
 }
 
-.wrapper .main-wrapper .main-wrap .tos-wrap .sub-header {
-  font-weight: bold;
-  font-size: 1.125em;
-  margin-bottom: 1em;
+@media screen and (max-width: 576px) {
+  .wrapper .main-wrapper .main-wrap .signUp-wrap {
+    width: 250px;
+  }
 }
 
-.wrapper .main-wrapper .main-wrap .tos-wrap .tos {
-  background-color: #f7f7f7;
-  padding: 1em;
-  line-height: 1.375em;
-  overflow-y: scroll;
-  margin-bottom: 1em;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  -webkit-box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.2);
-          box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.2);
-  height: 200px;
-}
-
-.wrapper .main-wrapper .main-wrap .tos-wrap .tos::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, Opera*/
+.wrapper .main-wrapper .main-wrap .signUp-wrap .header {
+  font-size: 1.375em;
+  padding-bottom: 0.75em;
 }
 
 .wrapper .footer-wrap {

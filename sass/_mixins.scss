@@ -184,6 +184,9 @@ $footerColor:#EEEEEE;
 $fontColor:#1B2021;
 $maniTitle:#F7DBF0;
 
+$btnColor:black;
+$btnFontColor:#999;
+
 $postColor:#1B2021; //?DD2C00
 
 $sideColor:#00BCD4;
@@ -205,6 +208,7 @@ $popFontColor : #D83A56;
         text-align: center;
         display: inline-block;
         padding: 0.625em;
+		font-size: 1.125em;
         margin-left: 0.25em;
         border-radius: 0.25em;
         @include shadow($o:0.2,$x:0px,$b:8px);
@@ -228,4 +232,53 @@ $popFontColor : #D83A56;
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+
+
+
+.input-group{
+	font-size: 1em;
+	position: relative;
+	@include fx($v:$CT);
+	@include shadow($o:0.1,$x:0px,$b:8px);
+	margin-bottom: 0.5em;
+	width: inherit;
+	input{
+		width: inherit;
+		height: 45px;
+		border: 0;
+		font-size: 1em;
+		padding: 0 2.5em;
+		border: 1px solid black;
+		border-radius: 4px;
+		&:focus{
+			border: #999 1px solid;
+		}
+		@include XS{
+			width: 250px;
+		}
+	}
+	.i-left{
+		position: absolute;
+		padding-left: 1em;
+		z-index: 1;
+	}
+	.i-right{
+		position: absolute;
+		right: 0;
+		padding-right: 1em;
+		z-index: 1;
+	}
+}
+.message-wrap{
+	margin: 0.5em 0;
+	font-size: 0.875em;
+	.error{
+		color: red;
+	}
+}
+.check-wrap{
+	width: inherit;
+	margin-bottom: 0.5em;
 }

@@ -1,64 +1,63 @@
 @import 'base';
+$bgColor:#00BCD4;
+$postColor:#DD2C00; //?DD2C00
+$headerColor:#B2EBF2;
+$fontColor:#777;
+$sideColor:#00BCD4;
 
+$fontColor:#4C4C6D;
+$popBgColor : white;
+$popFontColor : #D83A56;
 
 //http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
 .wrapper{
-    background-color: $bgColor;
     position: relative;
     padding-bottom: 100px;
     min-height: 100vh;
     font-family: $noto-kr;
     color: $fontColor;
-    font-size: 0.75em; 
     .side-bt{
         font-size: 2em;
         position: absolute;
         left: 0;
-        bottom: 50%;
+        bottom: 60%;
         transform: translate(50%,50%);
         display: none;
         @include MD{
             display: block;
         }
     }
-    .header-wrapper{
+    .header-wrap{
         width: 100vw;
         height: 100px;
-        color: $headerFontColor;
         position: relative;
         background-color: $headerColor;
-        @include fx($h:$CT);
-        @include MD{
-            
+        @include fx($v:$CT,$direction:column);
+        padding-top: 1em;
+        @include XS{
+            font-size: 0.875em;
         }
-        .header-wrap{
-            width: 960px;
-            @include fx($h:$SB);
-            .title{
-                line-height: 1.5em;
-                color: $maniTitle;
-                font-family: $Yomogi;
-                padding: 1em;
-                padding-left: 2em;
-                font-size: 2.25em;
+        .title{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        .menu-wrap{
+            font-size: 1.25em;
+            @include fx();
+            .menu-list{
+                @include fx();
+                li{
+                    padding: 1em;
+                }
             }
-            .menu-wrap{
-                @include fx($v:$FE,$h:$CT);
-                font-size: 1.25em;
+            .icon-list{
                 @include MD{
                     display: none;
                 }
-                .menu-list{
-                    @include fx();
-                    li{
-                        padding: 1em;
-                    }
-                }
-                .icon-list{
-                    @include fx();
-                    li{
-                        padding: 1em 0.5em;
-                    }
+                @include fx($v:$FE);
+                li{
+                    padding: 0.5em;
+                    padding-bottom: 1em;
                 }
             }
         }
@@ -77,11 +76,7 @@
         animation-timing-function: linear;
         .side-header{
             position: relative;
-            color: $headerFontColor;
             height: 100px;
-            @include MD{
-                //height: 54px;
-            }
             margin-bottom: 2em;
             background-color: $headerColor;
         }
@@ -95,7 +90,7 @@
                     padding: 1em;
                     &:hover{
                         background-color: $headerColor;
-                        color: $bgColor;
+                        color: $bgColor
                     }
                 }
             }
@@ -111,27 +106,26 @@
     }
 
     .main-wrapper{
-        
         background-color: white;
         margin-top: 1em;
         width: 960px;
-        margin: 1em auto;
         height: calc(100vh - 200px);
+        margin: 1em auto;
         @include MD{
             width: calc(100% - 2em);
             padding: 0 1em;
         }
         .main-wrap{
-            position: relative;
-            @include fx($h:$CT,$v:$CT,$direction:column);
+            margin-top: 10vh;
+            @include fx($v:$CT,$h:$CT,$direction:column);
+            .header{
+                font-size: 1.375em;
+                padding-bottom: 0.75em;
+            }
             .login-wrap{
                 width: 500px;
                 @include XS{
                     width: 250px;
-                }
-                .header{
-                    font-size: 1.375em;
-                    padding-bottom: 0.75em;
                 }
                 .menu{
                     @include fx($h:$CT);
@@ -147,16 +141,23 @@
 
             }
 
+
+            position: relative;
+            section{
+                margin-bottom: 1em;
+            }
+            
         }
         
+    
 
     }
 
     .footer-wrap{
         position: absolute;
         bottom: 0;
+        left: 0;
         width: 100vw;
-        color: $footerColor;
         @include fx($h:$CT,$v:$CT,$direction:column);
         height: 100px;
         background-color: $headerColor;
@@ -173,7 +174,7 @@
             }
         }
         .open-date{
-            // font-weight: bold;
+            font-weight: bold;
         }
     }
 
@@ -182,8 +183,11 @@
         font-weight: 500;
     }
 
-
-
+    .header{
+        p{
+            font-weight: 700;
+        }
+    }
 
 
 

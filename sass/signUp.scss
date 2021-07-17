@@ -124,7 +124,7 @@
         .main-wrap{
             position: relative;
             @include fx($h:$CT,$v:$CT,$direction:column);
-            .login-wrap{
+            .signUp-wrap{
                 width: 500px;
                 @include XS{
                     width: 250px;
@@ -133,17 +133,7 @@
                     font-size: 1.375em;
                     padding-bottom: 0.75em;
                 }
-                .menu{
-                    @include fx($h:$CT);
-                    li{
-                        margin-top: 1em;
-                        cursor: pointer;
-                        &:nth-child(1)::after{
-                            padding: 0 1vw;
-                            content: "|";
-                        }
-                    }
-                }
+
 
             }
 
