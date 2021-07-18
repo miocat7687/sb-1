@@ -533,6 +533,114 @@ a:link, a:visited, a:hover, a:active {
   border-bottom: 2px solid #f0eded;
 }
 
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap div {
+  padding: 0.25em 0;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail {
+  border-bottom: 1px solid #f0eded;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #f0eded;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .content {
+  min-height: 200px;
+  padding: 1em 0;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments {
+  margin-bottom: 5em;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comments-header {
+  background-color: whitesmoke;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap {
+  font-size: 0.875em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .reply {
+  padding-left: 0.25em;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .comment-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .comment-info .writer {
+  width: 40px;
+}
+
 .wrapper .footer-wrap {
   position: absolute;
   bottom: 0;

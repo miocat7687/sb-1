@@ -136,37 +136,58 @@
                     border-bottom: 2px solid rgb(240, 237, 237);
                 }
                 .detail-wrap{
+                    div{
+                        padding: 0.25em 0;
+                    }
                     .detail{
+                        border-bottom: 1px solid $borderGray;
                         .title{
-
+                            font-size: 1.5em;
+                            font-weight: 500;
                         }
                         .info-wrap{
+                            @include fx();
                             .date{
-
+                                
                             }
                             .view-count{
 
                             }
+                            border-bottom: 1px solid $borderGray;
+                        }
+                        .content{
+                            min-height: 200px;
+                            padding: 1em 0;
                         }
                     }
                     .comments{
+                        margin-bottom: 5em;
                         .comments-header{
+                            background-color: rgb(245, 245, 245);
                             i{
 
                             }
                         }
                         .comment-wrap{
+                            font-size: 0.875em;
+                            @include fx();
                             .comment{
+                                .reply{
+                                    padding-left: 0.25em;
+                                }
+                                @include fx($w:nowrap);
                                 .comment-info{
+                                    
+                                    @include fx($direction:column);
                                     .writer{
-
+                                        width: 40px;
                                     }
                                     .date{
                                         
                                     }
                                 }
                                 .content{
-                                    
+
                                 }
                             }
                         }
