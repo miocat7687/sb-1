@@ -191,6 +191,24 @@
                                 }
                             }
                         }
+                        .commint-input-wrap{
+                            @include fx();
+                            div{
+                                padding: 0;
+                            }
+                            input[type=text]{
+                                width: calc(100% - 3em);
+                            }
+                            .btn-wrap{
+                                margin: 0;
+                                .btn{
+                                    font-size: 0.75em;
+                                    @include MD{
+                                        font-size: 1em;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
