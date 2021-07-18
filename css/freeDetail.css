@@ -504,6 +504,7 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .main-wrapper .main-wrap {
   width: 100%;
   position: relative;
+  font-size: 1.375em;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail {
@@ -537,8 +538,37 @@ a:link, a:visited, a:hover, a:active {
   padding: 0.25em 0;
 }
 
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .btn-wrap {
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .btn-wrap .btn {
+  font-size: 0.75em;
+}
+
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail {
+  border-top: 1px solid #f0eded;
   border-bottom: 1px solid #f0eded;
+}
+
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .btn-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .title {
@@ -580,21 +610,6 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap {
   font-size: 0.875em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment {
@@ -616,7 +631,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .reply {
-  padding-left: 0.25em;
+  padding: 0.25em;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .comment-info {
@@ -631,10 +646,10 @@ a:link, a:visited, a:hover, a:active {
           align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .comment-wrap .comment .comment-info .writer {
@@ -665,20 +680,6 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .commint-input-wrap input[type=text] {
   width: calc(100% - 3em);
-}
-
-.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .commint-input-wrap .btn-wrap {
-  margin: 0;
-}
-
-.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .commint-input-wrap .btn-wrap .btn {
-  font-size: 0.75em;
-}
-
-@media screen and (max-width: 992px) {
-  .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .comments .commint-input-wrap .btn-wrap .btn {
-    font-size: 1em;
-  }
 }
 
 .wrapper .footer-wrap {

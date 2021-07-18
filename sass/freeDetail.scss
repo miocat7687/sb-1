@@ -125,6 +125,7 @@
         .main-wrap{
             width: 100%;
             position: relative;
+            font-size: 1.375em;
             .free-detail{
                 padding: 0 1em;
                 padding-top: 1em;
@@ -139,7 +140,18 @@
                     div{
                         padding: 0.25em 0;
                     }
+                    .btn-wrap{
+                        margin: 0;
+                        box-shadow: none;
+                        .btn{
+                            font-size: 0.75em;
+                        }
+                    }
                     .detail{
+                        .btn-left{
+                            @include fx($h:$FE);
+                        }
+                        border-top: 1px solid $borderGray;
                         border-bottom: 1px solid $borderGray;
                         .title{
                             font-size: 1.5em;
@@ -170,15 +182,13 @@
                         }
                         .comment-wrap{
                             font-size: 0.875em;
-                            @include fx();
                             .comment{
-                                .reply{
-                                    padding-left: 0.25em;
-                                }
                                 @include fx($w:nowrap);
+                                .reply{
+                                    padding: 0.25em;
+                                }
                                 .comment-info{
-                                    
-                                    @include fx($direction:column);
+                                    @include fx();
                                     .writer{
                                         width: 40px;
                                     }
@@ -198,15 +208,6 @@
                             }
                             input[type=text]{
                                 width: calc(100% - 3em);
-                            }
-                            .btn-wrap{
-                                margin: 0;
-                                .btn{
-                                    font-size: 0.75em;
-                                    @include MD{
-                                        font-size: 1em;
-                                    }
-                                }
                             }
                         }
                     }
