@@ -513,6 +513,37 @@ a:link, a:visited, a:hover, a:active {
   border-bottom: 2px solid #f0eded;
 }
 
+.wrapper .main-wrapper .main-wrap .title-wrap {
+  border-top: 1px solid #f0eded;
+  border-bottom: 1px solid #f0eded;
+  margin-bottom: 0.5em;
+}
+
+.wrapper .main-wrapper .main-wrap .title-wrap input[type=text] {
+  width: 100%;
+  border: none;
+  padding: 1em 0.5em;
+}
+
+.wrapper .main-wrapper .main-wrap .btn-wrap {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .wrapper .footer-wrap {
   position: absolute;
   bottom: 0;

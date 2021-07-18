@@ -131,6 +131,26 @@
                 margin-bottom: 1em;
                 border-bottom: 2px solid rgb(240, 237, 237);
             }
+            .title-wrap{
+                border-top: 1px solid $borderGray;
+                border-bottom: 1px solid $borderGray;
+                margin-bottom: 0.5em;
+                input[type=text]{
+                    width: 100%;
+                    border: none;
+                    padding: 1em 0.5em;
+                }
+            }
+            .content-wrap{
+
+            }
+            .btn-wrap{
+                margin-top: 1em;
+                @include fx($h:$CT);
+                .btn{
+
+                }
+            }
         }
     }
 

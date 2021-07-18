@@ -125,7 +125,7 @@
         .main-wrap{
             width: 100%;
             position: relative;
-            font-size: 1.375em;
+            font-size: 1.25em;
             .free-detail{
                 padding: 0 1em;
                 padding-top: 1em;
@@ -145,10 +145,13 @@
                         box-shadow: none;
                         .btn{
                             font-size: 0.75em;
+                            @include MD{
+                                font-size: 1em;
+                            }
                         }
                     }
                     .detail{
-                        .btn-left{
+                        .btn-right{
                             @include fx($h:$FE);
                         }
                         border-top: 1px solid $borderGray;

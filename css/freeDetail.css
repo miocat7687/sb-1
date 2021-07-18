@@ -504,7 +504,7 @@ a:link, a:visited, a:hover, a:active {
 .wrapper .main-wrapper .main-wrap {
   width: 100%;
   position: relative;
-  font-size: 1.375em;
+  font-size: 1.25em;
 }
 
 .wrapper .main-wrapper .main-wrap .free-detail {
@@ -548,12 +548,18 @@ a:link, a:visited, a:hover, a:active {
   font-size: 0.75em;
 }
 
+@media screen and (max-width: 992px) {
+  .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .btn-wrap .btn {
+    font-size: 1em;
+  }
+}
+
 .wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail {
   border-top: 1px solid #f0eded;
   border-bottom: 1px solid #f0eded;
 }
 
-.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .btn-left {
+.wrapper .main-wrapper .main-wrap .free-detail .detail-wrap .detail .btn-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
