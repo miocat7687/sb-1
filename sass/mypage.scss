@@ -1,0 +1,312 @@
+@import 'base';
+
+
+//http://junil-hwang.com/blog/css-slide-animation/ 슬라이드 참고
+.wrapper{
+    background-color: $bgColor;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    font-family: $noto-kr;
+    color: $fontColor;
+    font-size: 0.75em; 
+    .side-bt{
+        font-size: 2em;
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        transform: translate(50%,50%);
+        display: none;
+        @include MD{
+            display: block;
+        }
+    }
+    .header-wrapper{
+        width: 100vw;
+        height: 100px;
+        color: $headerFontColor;
+        position: relative;
+        background-color: $headerColor;
+        @include fx($h:$CT);
+        @include MD{
+            
+        }
+        .header-wrap{
+            width: 960px;
+            @include fx($h:$SB);
+            .title{
+                line-height: 1.5em;
+                color: $maniTitle;
+                font-family: $Yomogi;
+                padding: 1em;
+                padding-left: 2em;
+                font-size: 2.25em;
+            }
+            .menu-wrap{
+                @include fx($v:$FE,$h:$CT);
+                font-size: 1.25em;
+                @include MD{
+                    display: none;
+                }
+                .menu-list{
+                    @include fx();
+                    li{
+                        padding: 1em;
+                    }
+                }
+                .icon-list{
+                    @include fx();
+                    li{
+                        padding: 1em 0.5em;
+                    }
+                }
+            }
+        }
+    }   
+    
+    .side-wrap{
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 200px;
+        height: 100vh;
+        background: white;
+        z-index: 150;
+        left: -9999px;
+        transition: all 0.3s;
+        animation-timing-function: linear;
+        .side-header{
+            position: relative;
+            color: $headerFontColor;
+            height: 100px;
+            @include MD{
+                //height: 54px;
+            }
+            margin-bottom: 2em;
+            background-color: $headerColor;
+        }
+        .side{
+            @include fx($h:$CT);
+            .menu-list{
+                text-align: center;
+                width: 200px;
+                li{
+                    width: 100%;
+                    padding: 1em;
+                    &:hover{
+                        background-color: $headerColor;
+                        color: $bgColor;
+                    }
+                }
+            }
+            .icon-list{
+                @include fx();
+                position: absolute;
+                bottom: 5%;
+                li{
+                    padding: 0.5em;
+                }
+            }
+        }
+    }
+
+    .main-wrapper{
+        background-color: white;
+        margin-top: 1em;
+        width: 960px;
+        margin: 0 auto;
+        padding: 1em 0;
+        min-height: calc(100vh - 200px);
+        @include fx($v:$CT,$direction:column);
+        @include MD{
+            width: calc(100% - 2em);
+            padding: 0 1em;
+        }
+        .main-wrap{
+            width: 100%;
+            position: relative;
+            padding-top: 1em;
+            .mypage-wrap{
+                padding: 0 1em;
+                .header{
+                    font-size: 1.5em;
+                    padding-bottom: 0.5em;
+                    margin-bottom: 1em;
+                    border-bottom: 2px solid rgb(240, 237, 237);
+                }
+                .mypage{
+                    @include fx();
+                    .mypage-side{
+                        width: 20%;
+                        @include MD{
+                            font-size: 1.25em;
+                            width: 100%;
+                            margin-bottom: 2em;
+                        }
+                        .mypage-header{
+                            font-size: 1.25em;
+                            padding-bottom: 1em;
+                            #user-name{
+                                color: blue;
+                            }
+                        }
+                        .mypage-menu{
+                            li{
+                                font-size: 1.125em;
+                                padding: 0.5em;
+                                cursor: pointer;
+                                position: relative;
+                                padding-right: 2em;
+                                &:hover{    
+                                    background-color: $borderGray;
+                                    &::after{
+                                        position: absolute;
+                                        right: 0;
+                                        content: "";
+                                        height: calc(100% - 2px);
+                                        top: 0;
+                                        background-color: blue;
+                                        border: 1px solid blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .myinfo{
+                        width: 80%;
+                        @include MD{
+                            width: 100%;
+                        }
+                        .myinfo-header{
+                            font-size: 1.75em;
+                            padding-bottom: 1em;
+                            border-bottom: 1px solid $borderGray;
+                        }
+                        .info{
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            li{
+                                @include fx($v:$CT);
+                                padding: 0.5em;
+                                border-bottom: 1px solid $borderGray;
+                                font-size: 1.125em;
+                                label{
+                                    padding-right: 3em;
+                                }
+                                input[type=text]{
+                                    border: none;
+                                }
+                            }
+                            .btn{
+                                box-shadow: none;
+                            }
+                        }
+                        .passModify{
+                            .passModify-header{
+                                font-size: 1.375em;
+                                padding-bottom: 1em;
+                                border-bottom: 1px solid $borderGray;
+                            }
+                            .input-list{
+                                margin-bottom: 1em;
+                                li{
+                                    padding: 0.5em;
+                                    font-size: 1.25em;
+                                    label{
+                                        display: inline-block;
+                                        padding-right: 1em;
+                                        min-width: 100px;
+                                    }
+                                    input[type=text]{
+                                        border: 1px solid $borderGray;
+                                    }
+                                }
+                            }
+                            .btn-wrap{
+                                @include fx($h:$CT);
+                                .btn{
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .footer-wrap{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        color: $footerColor;
+        @include fx($h:$CT,$v:$CT,$direction:column);
+        height: 100px;
+        background-color: $headerColor;
+        font-size: 1.125em;
+        .menu-list{
+            @include fx();
+            margin-bottom: 0.5em;
+            li{
+                &:not(:last-child):after{
+                    content: "|";
+                    padding: 0 0.125em;
+
+                }
+            }
+        }
+        .open-date{
+            // font-weight: bold;
+        }
+    }
+
+    //공통
+    li.menu{
+        font-weight: 500;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
