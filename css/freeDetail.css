@@ -480,12 +480,12 @@ a:link, a:visited, a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
@@ -502,43 +502,35 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .wrapper .main-wrapper .main-wrap {
+  width: 100%;
   position: relative;
 }
 
-.wrapper .main-wrapper .main-wrap .tos-wrap {
-  padding: 2em 5em;
+.wrapper .main-wrapper .main-wrap .free-detail {
+  padding: 0 1em;
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.wrapper .main-wrapper .main-wrap .tos-wrap .header {
+.wrapper .main-wrapper .main-wrap .free-detail .header {
   font-size: 1.5em;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   border-bottom: 2px solid #f0eded;
-}
-
-.wrapper .main-wrapper .main-wrap .tos-wrap .sub-header {
-  font-size: 1.125em;
-  margin-bottom: 1em;
-}
-
-.wrapper .main-wrapper .main-wrap .tos-wrap .tos {
-  background-color: #f7f7f7;
-  padding: 1em;
-  line-height: 1.375em;
-  overflow-y: scroll;
-  margin-bottom: 1em;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  -webkit-box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
-          box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
-  height: 200px;
-}
-
-.wrapper .main-wrapper .main-wrap .tos-wrap .tos::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, Opera*/
 }
 
 .wrapper .footer-wrap {

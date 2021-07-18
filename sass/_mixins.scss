@@ -24,11 +24,11 @@
 	max-width: $w;
 	margin: 0 auto;
 }
-@mixin shadow($x:5px,$y:5px,$b:5px,$o:0.5) {
+@mixin shadow($x:5px,$y:5px,$b:5px,$o:0.2) {
 	box-shadow: $x $y $b rgba(0,0,0,$o);
 }
-@mixin shadow-light($x:0,$y:0,$b:8px,$o:0.2) {
-	box-shadow: 5px 5px $b rgba(255,255,255,$o);
+@mixin shadow-light($x:5px,$y:5px,$b:10px,$o:0.5) {
+	box-shadow: $x $y $b rgba(255,255,255,$o);
 }
 @mixin text-shadow($x:0,$y:0,$b:5px,$o:0.5) {
 	text-shadow: 5px 5px 10px rgba(0,0,0,$o);
@@ -183,6 +183,7 @@ $headerFontColor:#fffbfb;
 $footerColor:#EEEEEE;
 $fontColor:#1B2021;
 $maniTitle:#F7DBF0;
+$borderGray:rgb(240, 237, 237);
 
 $btnColor:black;
 $btnFontColor:#999;
@@ -281,4 +282,36 @@ $popFontColor : #D83A56;
 .check-wrap{
 	width: inherit;
 	margin-bottom: 0.5em;
+}
+
+.search-group{
+	height: inherit;
+	height: 2.5em;
+	border-radius: 0.25em;
+	@include fx($v:$CT);
+	color: white;
+	width: inherit;
+	select{
+		width: 4em;
+		height: inherit;
+		background-color: $headerColor;
+		border-radius: 0.25em 0 0 0.25em;
+		color: inherit;
+		appearance: none;
+		padding-left: 0.875em;
+	}
+	input[type=text]{
+		border: 0;
+		height: inherit;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding: 0 0.25em;
+	}
+	a{
+		@include fx($v:$CT,$h:$CT);
+		width: 2em;
+		height: inherit;
+		background-color: $headerColor;
+		border-radius: 0 0.25em 0.25em 0;
+	}
 }

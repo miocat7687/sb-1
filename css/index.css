@@ -125,7 +125,72 @@
   margin-bottom: 0.5em;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt, fieldset {
+.search-group {
+  height: inherit;
+  height: 2.5em;
+  border-radius: 0.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  width: inherit;
+}
+
+.search-group select {
+  width: 4em;
+  height: inherit;
+  background-color: #1B2021;
+  border-radius: 0.25em 0 0 0.25em;
+  color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 0.875em;
+}
+
+.search-group input[type=text] {
+  border: 0;
+  height: inherit;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0 0.25em;
+}
+
+.search-group a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 2em;
+  height: inherit;
+  background-color: #1B2021;
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, header, footer, section, aside, article, ul, ol, li, dl, dd, dt, fieldset, a {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -409,7 +474,8 @@ a:link, a:visited, a:hover, a:active {
   background-color: #fffbfb;
   margin-top: 1em;
   width: 960px;
-  margin: 1em auto;
+  margin: 0 auto;
+  padding: 1em 0;
   min-height: calc(100vh - 200px);
 }
 

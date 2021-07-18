@@ -111,51 +111,27 @@
     }
 
     .main-wrapper{
-        
         background-color: white;
         margin-top: 1em;
         width: 960px;
         margin: 0 auto;
         padding: 1em 0;
         min-height: calc(100vh - 200px);
-        @include fx($h:$CT,$v:$ST,$direction:column);
+        @include fx($v:$CT,$direction:column);
         @include MD{
             width: calc(100% - 2em);
             padding: 0 1em;
         }
         .main-wrap{
+            width: 100%;
             position: relative;
-            .tos-wrap{
-                padding: 2em 5em;
-                .header{
-                    font-size: 1.5em;
-                    padding-bottom: 0.5em;
-                    margin-bottom: 1em;
-                    border-bottom: 2px solid rgb(240, 237, 237);
-                }
-                .sub-header{
-                    font-size: 1.125em;
-                    margin-bottom: 1em;
-                }
-                .tos{
-                    background-color: rgb(247, 247, 247);
-                    padding: 1em;
-                    line-height: 1.375em;
-                    overflow-y: scroll;
-                    margin-bottom: 1em;
-                    @include scrollNone();
-                    @include shadow-light();
-                    height: 200px;
-                }
-
+            .header{
+                font-size: 1.5em;
+                padding-bottom: 0.5em;
+                margin-bottom: 1em;
+                border-bottom: 2px solid rgb(240, 237, 237);
             }
-
-           
-
-            
         }
-        
-
     }
 
     .footer-wrap{

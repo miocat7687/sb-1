@@ -115,7 +115,8 @@
         background-color: white;
         margin-top: 1em;
         width: 960px;
-        margin: 1em auto;
+        margin: 0 auto;
+        padding: 1em 0;
         min-height: calc(100vh - 200px);
         @include MD{
             width: calc(100% - 2em);
